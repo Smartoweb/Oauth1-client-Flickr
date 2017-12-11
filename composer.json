@@ -1,0 +1,14 @@
+{
+  "name": "smartflickr/flickr",
+  "description" : "Unofficial Oauth 1.0 adapter for flickr API",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0",
+    "league/oauth1-client": "~1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "smartflickr\\OAuth1\\Client\\Server\\": "src/"
+    }
+  }
+}
