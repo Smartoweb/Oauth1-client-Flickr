@@ -1,5 +1,5 @@
 {
-  "name": "smartflickr/flickr",
+  "name": "Smartoweb/flickroauth1",
   "description" : "Unofficial Oauth 1.0 adapter for flickr API",
   "version": "1.0.0",
   "license": "GPL-3.0",
@@ -9,7 +9,7 @@
   },
   "autoload": {
     "psr-4": {
-      "smartflickr\\OAuth1\\Client\\Server\\": "src/"
+      "flickr\\OAuth1\\Client\\Server\\": "src/"
     }
   }
 }
