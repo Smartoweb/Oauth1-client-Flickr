@@ -21,20 +21,16 @@ $server = new smartoweb\OAuth1\Client\Server\Flickr([
 ]);
 ```
 
-Please refer to the Garmin wellness API for the available endpoints.
+// Retrieve temporary credentials
+$temporaryCredentials = $server->getTemporaryCredentials();
 
-Below are the steps to test examples :
-```
-1. Copy examples in your web-server root if needed.
-2. Define consumerKey, consumerSecret and callback_uri enviornment variables or alternatively set them directly in all php files in example. Below is the .htaccess code to demonstrate how you may do it.
+// Store credentials in the session, we'll need them later
+$_SESSION['temporary_credentials'] = serialize($temporaryCredentials);
+session_write_close();
+
+// Second part of OAuth 1.0 authentication is to redirect the
+// resource owner to the login screen on the server.
+$server->authorize($temporaryCredentials);
 
 
-setEnv consumerKey sddsadas
-setEnv consumerSecret fdsfdsfsd
-setEnv callback_uri http://localhost/flickr/vendor/smartoweb/flickr/examples/flickr_callback.php
-
-3. Now run examples/index.php in your browser. It should redirect you to the flickr server, where you need to login and authorize the application.
-4. Once authorization is done user will be redirected to examples/flickr_api_test.php. There you must see activity summary output if everything is okay.
-5. You can change parameter values in examples/garmin_api_test.php because it is picking up user token from the session.
-```
 
