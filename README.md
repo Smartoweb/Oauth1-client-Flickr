@@ -6,7 +6,7 @@
 ## Installation
 
 ```
-composer require smartoweb/flickr
+composer require smartoweb/flickroauth1
 ```
 
 ## Usage
