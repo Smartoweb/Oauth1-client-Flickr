@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "League\\oauth1-client\\src\\Client\\Server": "src/"
+      "League\\OAuth1\\Client\\Server": "src/"
     }
   }
 }
