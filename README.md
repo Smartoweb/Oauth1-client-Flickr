@@ -22,6 +22,7 @@ $server = new smartoweb\OAuth1\Client\Server\Flickr([
 ```
 
 // Retrieve temporary credentials
+```php
 $temporaryCredentials = $server->getTemporaryCredentials();
 
 // Store credentials in the session, we'll need them later
@@ -31,6 +32,6 @@ session_write_close();
 // Second part of OAuth 1.0 authentication is to redirect the
 // resource owner to the login screen on the server.
 $server->authorize($temporaryCredentials);
-
+```
 
 
