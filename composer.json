@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "flickr\\OAuth1\\Client\\Server\\": "src/"
+      "League\\oauth1-client\\src\\Client\\Server": "src/"
     }
   }
 }
