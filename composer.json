@@ -1,5 +1,5 @@
 {
-  "name": "Smartoweb/flickroauth1",
+  "name": "smartoweb/flickroauth1",
   "description" : "Unofficial Oauth 1.0 adapter for flickr API",
   "license": "GPL-3.0",
   "require": {
