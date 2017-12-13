@@ -1,7 +1,5 @@
-#IN DEV!!
-
 # Oauth1-client-Flickr
- Flickr Oauth1 client provider for thephpleague/oauth1-client (see [a link](https://github.com/thephpleague/oauth1-client))
+ Flickr Oauth1 client provider for thephpleague/oauth1-client (see [https://github.com/thephpleague/oauth1-client](https://github.com/thephpleague/oauth1-client))
  
 ## Installation
 
