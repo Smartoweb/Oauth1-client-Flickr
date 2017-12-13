@@ -19,9 +19,9 @@ Usage is the same as The League's OAuth client, using `smartoweb\OAuth1\Client\S
       'secret'       => 'your-client-secret',
       'callback_uri' => 'http://callback.url/callback',
    ]);
-   ...store $server for use it in callback_uri function
+   #...store $server for use it in callback_uri function
    $temporaryCredentials=$server->getTemporaryCredentials();
-   ...store $temporaryCredentials for use it in callback_uri function
+   #...store $temporaryCredentials for use it in callback_uri function
    $server->authorize($state);
 ```
  
@@ -30,10 +30,10 @@ Usage is the same as The League's OAuth client, using `smartoweb\OAuth1\Client\S
    $oauth_token=!empty($_GET['oauth_token'])?$_GET['oauth_token']:'';
    $oauth_verifier=!empty($_GET['oauth_verifier'])?$_GET['oauth_verifier']:'';
    if ($oauth_token!='' && $oauth_verifier!='') {
-      $server=...stored $server
-      $temporaryCredentials=...stored $temporaryCredentials
+      $server=#...stored $server
+      $temporaryCredentials=#...stored $temporaryCredentials
       $token = $server->getTokenCredentials($temporaryCredentials, $oauth_token, $oauth_verifier);
-      ...store $token  
+      #...store $token  
    }
 ```
 
